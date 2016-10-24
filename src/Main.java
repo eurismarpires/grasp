@@ -16,14 +16,11 @@ public class Main {
 		objetos.add(objeto3);
 		objetos.add(objeto4);
 		objetos.add(objeto5);
-		for(Objeto objeto:objetos){
-			  System.out.println(objeto.getId() + "-" + objeto.getPeso()  + "-" + objeto.getBeneficio()); 
-		}
-		Collections.sort(objetos);
-		System.out.println("ordenando..."); 
-		for(Objeto objeto:objetos){
-			  System.out.println(objeto.getId() + "-" + objeto.getPeso()  + "-" + objeto.getBeneficio()); 
-		}		
+		Mochila mochila = new Mochila();
+		mochila.setObjetos(objetos);
+		mochila.setCapacidade(23);
+		Grasp g = new Grasp();
+		g.grasp(mochila);
 	}
 
 }
