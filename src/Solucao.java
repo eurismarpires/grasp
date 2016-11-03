@@ -1,4 +1,5 @@
 
 public class Solucao {
-	int [] s;
+	int [] s;        
+        
 }
